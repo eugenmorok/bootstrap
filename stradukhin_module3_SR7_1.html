@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>7.1 flexbox</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color:oldlace;
+        }
+
+        header {
+            background-color: #648FDE;
+            height: 150px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        main aside {
+            width: 20%;
+            background-color: #A5C1F1;
+        }
+
+        main section {
+            width: 80%;
+            background-color: #FEFEFE;
+        }
+
+        footer {
+            text-align: center;
+            background-color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>шапка</h3>
+    </header>
+    <main>
+        <aside>
+            <h3>меню</h3>
+        </aside>
+        <section>
+            <article>
+                <h3>основной контейнер</h3>
+            </article>
+        </section>
+        <aside>
+            <h3>сайдбар</h3>
+        </aside>
+    </main>
+
+</body>
+
+</html>

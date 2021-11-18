@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>7.2 flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        p {font-weight: bold;}
+
+        #flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #flex-container>div {
+            background:papayawhip;
+            border: 1px solid black;
+            width: 20%;
+            margin: 0px;
+            padding: 15px;
+        }
+
+        #flex-container>div:nth-of-type(1) {
+            width: 16%;
+        }
+
+        #flex-container>div:nth-of-type(2) {
+            width: 16%;
+        }
+
+        #flex-container>div:nth-of-type(3) {
+            width: 36%;
+            align-self: center;
+        }
+
+        #flex-container>div:nth-of-type(4) {
+            width: 16%;
+        }
+
+        #flex-container>div:nth-of-type(5) {
+            width: 16%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='flex-container'>
+        <div><p>Box 1</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</div>
+        <div><p>Box 1</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</div>
+        <div><p>Box 1</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</div>
+        <div><p>Box 1</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</div>
+        <div><p>Box 1</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</div>
+    </div>
+
+</body>
+
+</html>
